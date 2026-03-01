@@ -1,0 +1,41 @@
+---
+const features = [
+  {
+    title: 'Sanntidsavganger',
+    description: 'Henter alle togavganger i Norge via Entur sitt API. Velg din linje og se neste avgang direkte på klokken.',
+    icon: '🚂',
+  },
+  {
+    title: 'Forsinkelser',
+    description: 'Får oppdatert informasjon om forsinkelser så du alltid vet når toget faktisk går.',
+    icon: '⏱️',
+  },
+  {
+    title: 'Tile-modus',
+    description: 'Legg til i hurtigvisning for rask tilgang uten å åpne appen. Perfekt når du har det travelt.',
+    icon: '📱',
+  },
+  {
+    title: 'Standalone',
+    description: 'Fungerer uten tilkoblet telefon. Krever kun internett – ideelt for klokker med egen mobilabonnement.',
+    icon: '✓',
+  },
+];
+---
+
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-primary text-center mb-16">
+      Alt du trenger
+    </h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {features.map((feature) => (
+        <div class="p-6 rounded-2xl bg-background border border-primary/5 hover:border-primary/20 transition-colors">
+          <div class="text-3xl mb-4">{feature.icon}</div>
+          <h3 class="text-lg font-semibold text-primary mb-2">{feature.title}</h3>
+          <p class="text-primary/70 text-sm leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
