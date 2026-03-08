@@ -16,9 +16,27 @@ const features = [
     icon: '📱',
   },
   {
-    title: 'Selvkjørende',
-    description: 'Fungerer uten tilkoblet telefon. Krever kun internett – ideelt for klokker med eget mobilabonnement eller WiFi/Bluetooth tilkobling med telefonen.',
-    icon: '✓',
+    title: 'Avvik og sanntid',
+    description: 'Får sanntidsankomsttid og oppdateringer om avvik – forsinkelser, kanselleringer og endrede plattformer.',
+    icon: '📋',
+  },
+  {
+    title: 'To favoritter',
+    description: 'Veksle raskt mellom to favorittlinjer – f.eks. hjem og jobb – for å sjekke både utreise og hjemreise.',
+    icon: '🔄',
+  },
+  {
+    title: 'Kjøp billett',
+    description: 'Åpne avgangen direkte i Entur-appen på mobilen med ett trykk – for rask billettkjøp på farten.',
+    icon: '🎫',
+  },
+];
+
+const comingSoon = [
+  {
+    title: 'Varslinger om forsinkelser',
+    description: 'Sett opp en favorittavgang og få pushvarsel rett på klokken hvis toget er forsinket.',
+    icon: '🔔',
   },
 ];
 ---
@@ -28,9 +46,19 @@ const features = [
     <h2 class="text-3xl sm:text-4xl font-bold text-primary text-center mb-16">
       Alt du trenger
     </h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {features.map((feature) => (
         <div class="p-6 rounded-2xl bg-background border border-primary/5 hover:border-primary/20 transition-colors">
+          <div class="text-3xl mb-4">{feature.icon}</div>
+          <h3 class="text-lg font-semibold text-primary mb-2">{feature.title}</h3>
+          <p class="text-primary/70 text-sm leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+      {comingSoon.map((feature) => (
+        <div class="p-6 rounded-2xl bg-background border border-primary/10 border-dashed opacity-80 relative">
+          <span class="absolute top-4 right-4 text-xs font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+            Kommer snart
+          </span>
           <div class="text-3xl mb-4">{feature.icon}</div>
           <h3 class="text-lg font-semibold text-primary mb-2">{feature.title}</h3>
           <p class="text-primary/70 text-sm leading-relaxed">{feature.description}</p>
