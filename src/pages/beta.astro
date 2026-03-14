@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Betatesting – Togavganger"
+  description="Alt du trenger som betatester for Togavganger. Meld deg på testgruppen, last ned appen og send tilbakemelding."
+>
+  <main class="max-w-2xl mx-auto px-6 py-16">
+    <a href="/" class="text-primary/60 hover:text-primary text-sm transition-colors mb-8 inline-block">← Tilbake</a>
+
+    <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+      Lukket beta
+    </span>
+    <h1 class="text-3xl font-bold text-primary mb-2">Betatesting</h1>
+    <p class="text-primary/60 mb-10">
+      Hjelp oss å forbedre Togavganger før den publiseres i Play Store. Vi trenger minst 12 testere som bruker appen aktivt i 14 dager.
+    </p>
+
+    <div class="flex flex-col gap-4">
+
+      <a
+        href="https://groups.google.com/g/testgruppe-togavganger"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-start gap-5 p-5 rounded-2xl border border-primary/15 hover:border-primary/40 hover:bg-primary/5 transition-all group"
+      >
+        <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
+          <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-2">
+            <span class="font-semibold text-primary">1. Meld deg på testgruppen</span>
+            <svg class="w-4 h-4 text-primary/30 group-hover:text-primary/60 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <p class="text-sm text-primary/60 mt-1">Bli med i Google-gruppen for å få tilgang til betaversjonen av appen. Ingen i gruppen kan se eller kommunisere med hverandre.</p>
+        </div>
+      </a>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=no.togavganger"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-start gap-5 p-5 rounded-2xl border border-primary/15 hover:border-primary/40 hover:bg-primary/5 transition-all group"
+      >
+        <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
+          <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.302 2.302-8.636-8.634z"/>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-2">
+            <span class="font-semibold text-primary">2. Last ned appen</span>
+            <svg class="w-4 h-4 text-primary/30 group-hover:text-primary/60 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+          <p class="text-sm text-primary/60 mt-1">Installer Togavganger på Wear OS-klokken din fra Google Play.</p>
+        </div>
+      </a>
+
+      <a
+        href="/tilbakemelding"
+        class="flex items-start gap-5 p-5 rounded-2xl border border-primary/15 hover:border-primary/40 hover:bg-primary/5 transition-all group"
+      >
+        <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
+          <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-2">
+            <span class="font-semibold text-primary">3. Send tilbakemelding</span>
+            <svg class="w-4 h-4 text-primary/30 group-hover:text-primary/60 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+          <p class="text-sm text-primary/60 mt-1">Rapporter feil, kom med ønsker og hjelp oss å bli bedre.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="text-primary/40 text-xs mt-10 text-center">
+      Du forplikter deg til å bruke appen aktivt i 14 dager. Krever Wear OS-klokke med internettilgang.
+    </p>
+  </main>
+</Layout>
