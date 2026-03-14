@@ -19,35 +19,18 @@ yarn build
 
 Output is written to `dist/`.
 
+## URLs
+
+| Environment | URL |
+|-------------|-----|
+| Production | [togavganger.no](https://togavganger.no) |
+| Preview | [no-togavganger-web-git-preview-philipostlis-projects.vercel.app](https://no-togavganger-web-git-preview-philipostlis-projects.vercel.app) |
+
 ## Deployment
 
-The site is deployed to [Vercel](https://vercel.com). GitHub Actions handle automatic deployment:
+The site is deployed to [Vercel](https://vercel.com) via the built-in GitHub integration:
 
-- **Push to `main`** – production deployment
-- **Pull requests** – preview deployment with comment link
+- **Push to `main`** – production deployment to [togavganger.no](https://togavganger.no)
+- **Push to `preview`** – preview deployment at the preview URL above
 
-### Required GitHub Secrets
-
-Add these repository secrets in Settings → Secrets and variables → Actions:
-
-| Secret           | Description                                          |
-|------------------|------------------------------------------------------|
-| `VERCEL_TOKEN`   | Create at [vercel.com/account/tokens](https://vercel.com/account/tokens) |
-| `VERCEL_ORG_ID` | From `.vercel/project.json` after running `vercel link` |
-| `VERCEL_PROJECT_ID` | From `.vercel/project.json` after running `vercel link` |
-
-### Initial Setup
-
-1. Run `vercel link` locally to connect the project to Vercel
-2. Copy `orgId` and `projectId` from `.vercel/project.json` to GitHub secrets
-3. Create a Vercel token and add it as `VERCEL_TOKEN`
-
-### Disable Vercel GitHub Integration
-
-To use GitHub Actions instead of Vercel's built-in Git integration, add `vercel.json`:
-
-```json
-{
-  "github": { "enabled": false }
-}
-```
+Preview deployments can be promoted to production directly from the Vercel dashboard without a new push.
