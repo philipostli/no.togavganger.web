@@ -19,28 +19,31 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="flex flex-col gap-4">
 
-      <a
-        href="https://groups.google.com/g/testgruppe-togavganger"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-start gap-5 p-5 rounded-2xl border border-primary/15 hover:border-primary/40 hover:bg-primary/5 transition-all group"
-      >
-        <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
-          <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </div>
-        <div class="flex-1 min-w-0">
-          <div class="flex items-center justify-between gap-2">
-            <span class="font-semibold text-primary">1. Meld deg på testgruppen</span>
-            <svg class="w-4 h-4 text-primary/30 group-hover:text-primary/60 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      <div class="flex flex-col gap-3 p-5 rounded-2xl border border-primary/15">
+        <div class="flex items-start gap-5">
+          <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
           </div>
-          <p class="text-sm text-primary/60 mt-1">Bli med i Google-gruppen for å få tilgang til betaversjonen av appen. Ingen i gruppen kan se eller kommunisere med hverandre.</p>
+          <div>
+            <span class="font-semibold text-primary">1. Meld deg på testgruppen</span>
+            <p class="text-sm text-primary/60 mt-1">Åpne Google-gruppen nedenfor. Du må være innlogget med en Google-konto. Trykk på knappen <strong class="text-primary/80">«Bli med i gruppe»</strong> på siden som åpnes. Ingen i gruppen kan se eller kommunisere med hverandre.</p>
+          </div>
         </div>
-      </a>
+        <a
+          href="https://groups.google.com/g/testgruppe-togavganger"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-16 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors self-start"
+        >
+          Åpne Google-gruppen
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
 
       <a
         href="https://play.google.com/store/apps/details?id=no.togavganger"
